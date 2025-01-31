@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+IN:wght@100..400&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+body{
+    background-image: radial-gradient(rgb(122, 121, 121),rgb(65, 63, 63));   
+    font-family: "Asul", Arial, sans-serif;
+}
+
+main{
+    color: white;
+}
+
+header{
+    display:flex;
+    flex-direction: row;
+    background-color: rgb(56, 55, 55);
+    justify-content: center;
+}
+
+#navBar ul{
+    display: flex;   
+    margin-right: 6rem; 
+} 
+#navBar ul li{
+    list-style: none;
+}
+
+#navBar ul li a{
+    color: rgb(205, 214, 178);
+    text-decoration: none;
+    display: block;
+    padding: 2rem;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    font-size: 20px;
+}
+
+#navBar ul li a:hover{
+    color: white;
+    background-color: rgb(82, 81, 81);
+}
+
+#proyectosSect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#proyecto{
+    margin: 1rem;
+    width: 40vw;
+    height: auto;
+}
+
+#proyecto div img{
+    width: 40vw;
+    height: 40vh;
+    object-fit: cover;
+    position: relative;
+    box-shadow: 1.5rem 1.5rem 1.5rem rgb(56, 53, 53);
+    border-radius: 10px;
+}
+
+#projectName{
+    display: flex;
+    font-weight: bold;
+    font-size: 30px;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+#info{
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
