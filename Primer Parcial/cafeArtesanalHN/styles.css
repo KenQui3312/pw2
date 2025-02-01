@@ -1,11 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+IN:wght@100..400&display=swap');
+
 *{
     margin: 0px;
 }
 
-main{
-    position: relative;
+body{
+    font-family: "Open Sans", Arial, sans-serif;
+
 }
 
+main{
+    position: relative;
+    width: 100%;
+}
+#cardPanel{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
 main h2{
     display: flex;
     align-items: center;
@@ -13,11 +25,18 @@ main h2{
     margin-top: 1rem;
 }
 
+
+#halfScreen{
+    width: 0vw;
+    height: 0vh;
+}
+
 header{
     position: relative;
     display: flex;
     align-items: center;
     padding: 1rem;
+    width: 100%;
 }
 
 #sloganContainer{
@@ -93,7 +112,26 @@ header{
 }
 
 
-@media (min-width:721px) {
+
+
+@media(max-width:719px){
+    #coffee_png img{
+        opacity: 0%;
+    }
+
+    #coffee_png{
+        height: 0vh;
+    }
+}
+
+@media (min-width:720px) {
+    #coffee_png{
+        height: 0vh;
+    }
+
+    #coffee_png img{
+        opacity: 0%;
+    }
 
     main p{
         font-size: 20px;
@@ -118,7 +156,7 @@ header{
 @media (min-width:1025px) {
     
     #halfScreen{
-        background-color: rgb(253, 201, 104);
+        background-color: rgb(253, 147, 26);
         width: 40%;
         height: 100%;
         position: absolute;
@@ -132,7 +170,7 @@ header{
     }
 
     #sloganContainer{
-        margin: 0px;
+        margin: 0rem 0rem 50rem 0rem;
     }
 
     #halfScreen{
@@ -166,17 +204,29 @@ header{
         font-size: 35px;
     }
     #description{
-        font-size: 35px;
-    }
-    #coffee_png img{
-        display: flex;
+        padding: 0px;
+        font-size: 30px;
         position: absolute;
-        width: 15%;
-        height: auto;
-        translate: 50% 50%;
+        top: 0%;
+        width: 35%;
+        left: 61%;
+    }
+
+    #coffee_png{
+        position: absolute; 
+        display: flex;
+        width: 30%;
+        height: 30vh;
         top: 2%;
-        left: 45%;
-        z-index: 9999;
-        opacity: 9%;
+        left: 33%;
+        translate: 50% 50%;
+        z-index: 300;
+    }
+ 
+    #coffee_png img{
+        width: 30vw;
+        height: 40vh;
+        z-index: 99999;
+        opacity: 10%;
     }
 }
